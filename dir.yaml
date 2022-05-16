@@ -22,6 +22,8 @@
 - title_en: Quick Start
   title_cn: 快速开始
   path: getting-started/getting-started
+  children:
+    - getting-started/dashboard
 
 
 ## Infrastructure
@@ -39,7 +41,7 @@
         - deploy/cluster/security
         - deploy/cluster/manual
         - deploy/cluster/auto
-        - deploy/lb
+        - deploy/cluster/lb
   # - deploy/relup
 
 - title_en: Management Interfaces
@@ -48,7 +50,7 @@
     - admin/dashboard
     - admin/cli
     - admin/api # Swagger API doc
-    - admin/cfg # Configuration file
+    - admin/file # Configuration file
 
 - title_en: Security
   title_cn: 安全

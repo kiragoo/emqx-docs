@@ -26,8 +26,8 @@ When a client subscribes to a topic or publishes a message, the plugin implement
 
 {% emqxce %}
 
-* [Built-in ACL](./acl-file.md)
-* [Mnesia ACL](./acl-mnesia.md)
+* [Built-in ACL](./file.md)
+* [Mnesia ACL](./mnesia.md)
 
 {% endemqxce %}
 
@@ -49,10 +49,10 @@ The configuration file is used to provide an authentication data source, which i
 
 {% emqxce %}
 
-* [MySQL ACL](./acl-mysql.md)
-* [PostgreSQL ACL](./acl-postgres.md)
-* [Redis ACL](./acl-redis.md)
-* [MongoDB ACL](./acl-mongodb.md)
+* [MySQL ACL](./mysql.md)
+* [PostgreSQL ACL](./postgresql.md)
+* [Redis ACL](./redis.md)
+* [MongoDB ACL](./mongodb.md)
 
 {% endemqxce %}
 
@@ -72,7 +72,7 @@ The external database can store a large amount of data and dynamically manage AC
 
 {% emqxce %}
 
-* [HTTP ACL](./acl-http.md)
+* [HTTP ACL](./http.md)
 
 {% endemqxce %}
 
@@ -155,7 +155,7 @@ acl_nomatch = allow
 
 {% emqxce %}
 
-Configure the default  [ACL file](./acl-file.md) and use the file to define the default ACL rule:
+Configure the default  [ACL file](./file.md) and use the file to define the default ACL rule:
 
 {% endemqxce %}
 
@@ -221,7 +221,7 @@ acl_cache_ttl = 1m
 
 After updating the ACL rule, some clients cannot take effect immediately because the cache already exists. You need to manually clear all ACL caches to make them taking effect immediately :
 
-Refer to [HTTP API - CLear ACL cache](http-api.md#endpoint-get-acl-cache)
+Refer to [HTTP API - CLear ACL cache](http.md#endpoint-get-acl-cache)
 
 
 ## ACL Authentication Chain
